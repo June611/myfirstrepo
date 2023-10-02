@@ -1,2 +1,2 @@
 # myfirstrepo
-this is my first repo that is copyed 	*italicized text* 
+*this is my first repo that is copyed* 
