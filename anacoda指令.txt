@@ -1,0 +1,14 @@
+conda create -n py36 python=36 # 创建一个python36的环境，名为py36
+
+conda deactivate # 关闭当前环境
+conda env list # 列出所有已创建的环境
+conda env remove -n new_pytorch # 移除指定环境
+
+activate env_langchain1  激活此环境
+conda install ipykernel # 安装ipykernel模块
+#进行配置 名字为py36显示为py3636
+python -m ipykernel install --user --name py36 --display-name “py3636” #--user代表当前用户
+jupyter kernelspec remove py36 #删除内核py36
+
+jupyter kernelspec list   #查看已经安装的ipkernel 及安装目录
+conda list 查看此环境下conda安装的包 not pip list

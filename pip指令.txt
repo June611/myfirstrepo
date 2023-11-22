@@ -1,0 +1,13 @@
+pip list 查看所有已安装的库
+pip --version
+
+查看python和Pip是否来自同一个版本
+Python -m pip -V
+pip -V  
+
+py -m pip -V
+
+
+indeduct : python -m pip -V
+
+Pycharm社区版不支持django

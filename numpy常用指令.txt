@@ -1,0 +1,30 @@
+import numpy as np
+
+x = np.array( [ 1, 2, 3] )
+a = np.rando.randn(5) # 创建随机5个实数组成的数组
+print(a)     	    #[ 0.65186996  0.78146018  0.78361902 -0.04892818  0.04747577]
+print(a.shape)	   #(5,)
+a.reshape(5,1)
+
+np.shape
+np.reshape
+
+-np.exp（x）适用于任何np.array x并将指数函数应用于每个坐标
+-sigmoid函数及其梯度
+-image2vector通常用于深度学习
+-np.reshape被广泛使用。 保持矩阵/向量尺寸不变有助于我们消除许多错误。
+-numpy具有高效的内置功能
+-broadcasting非常有用
+注意 不同于np.multiply()和* 操作符（相当于Matlab / Octave中的 .*）执行逐元素的乘法，
+np.dot()执行的是矩阵-矩阵或矩阵向量乘法，
+
+loss = np.sum(np.abs(y - yhat)) 将对象上升一个层次，不再是向量中一个单独的值.
+sita(z) 函数很有特点, sita'(z) = sita(z)*(1-sita(z))
+
+#loss = np.dot((y - yhat),(y - yhat).T)
+    loss = np.dot(yhat-y,yhat-y)
+np.dot很厉害，能够识别出参与运算的数据是向量还是矩阵，还能进行进一步优化你的意图
+
+-向量化在深度学习中非常重要， 它保证了计算的效率和清晰度。
+-了解L1和L2损失函数。
+-掌握诸多numpy函数，例如np.sum，np.dot，np.multiply，np.maximum等。
